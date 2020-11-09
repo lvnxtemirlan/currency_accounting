@@ -1,0 +1,40 @@
+
+{% for data in currency_info %}
+<table class="table table-striped" id="table">
+  <thead>
+    <tr>
+      <th scope="col">Содержание операции</th>
+      <th scope="col">Дебит</th>
+      <th scope="col">Кредит</th>
+      <th scope="col">Сумма, тенге</th>
+      <th scope="col"><a class="btn btn-danger" href="/currency/delete/{{ data.pk }}" role="button">Delete</a></th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <th scope="row">{{ data.fields.row1 }}<p><i>({{data.fields.value}} долл. Сша * {{data.fields.bank_currency}} тенге/долл. США))</i></p></th>
+      <td>{{ data.fields.debit1 }} </td>
+      <td>{{ data.fields.credit1 }}</td>
+      <td>{{ data.fields.summ1 }}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">{{ data.fields.row2 }}<p><i>({{data.fields.value}} долл. Сша * {{data.fields.market_currency}} тенге/долл. США))</i></p></th>
+      <td>{{ data.fields.debit2 }}</td>
+      <td>{{ data.fields.credit2 }}</td>
+      <td>{{ data.fields.summ2 }}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">{{ data.fields.row3 }}<p><i>(({{data.fields.bank_currency}} тенге/долл. США  - {{data.fields.market_currency}} тенге/долл. США) * {{ data.fields.value }})</i></p></th>
+      <td>{{ data.fields.debit3 }}</td>
+      <td>{{ data.fields.credit3 }}</td>
+      <td>{{ data.fields.summ3 }}</td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
+<hr>
+  {% endfor %}

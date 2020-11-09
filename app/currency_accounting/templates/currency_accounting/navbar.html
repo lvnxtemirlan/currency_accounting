@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Учет суммовых разниц</a>
+  <form class="form-inline" action="/currency/table/">
+    <input class="form-control mr-sm-2" type="search" placeholder="Курс банка" id="bank_currency" aria-label="currency">
+    <input class="form-control mr-sm-2" type="search" placeholder="Рыночный Курс" id="market_currency" aria-label="currency">
+    <input class="form-control mr-sm-2" type="search" placeholder="Сумма/доллар" id="value" aria-label="currency" value="{{ value }}">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="create_auditing();">Create</button>
+  </form>
+  <a class="btn btn-primary" href="#" role="button">Курс обслуживавшего банка: 430.2</a>
+  <a class="btn btn-success" href="#" role="button">Рыночный курс: 432.7</a>
+</nav>
