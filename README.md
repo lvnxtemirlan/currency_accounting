@@ -4,7 +4,7 @@
 
 
 ### App example
-- [Follow link](http://2.59.40.4:3010/salary)
+- [Follow link](http://87.255.194.204:8000/currency/table/)
 
 ### Web framework
 - [django](https://www.djangoproject.com/)
