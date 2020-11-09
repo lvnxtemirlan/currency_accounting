@@ -1,6 +1,6 @@
 # Сurrency_accounting
 Веб учет суммовой разницы бухгалтерская проводка
-![Png](https://github.com/lvnxtemirlan/currency_accounting/uchet.png)
+![Png](https://github.com/lvnxtemirlan/currency_accounting/blob/main/uchet.png)
 
 
 ### App example
